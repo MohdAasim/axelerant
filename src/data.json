@@ -1,0 +1,52 @@
+{
+    "users": [
+      {
+        "name": "Name1",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-1.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      },
+      {
+        "name": "Name2",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-2.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      },
+      {
+        "name": "Name3",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-3.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      },
+      {
+        "name": "Nmae4",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-4.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      },
+      {
+        "name": "Name5",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-5.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      },
+      {
+        "name": "Name6",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-6.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      },
+      {
+        "name": "Name7",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-7.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      },
+      {
+        "name": "Name8",
+        "img":"https://axelerant.github.io/Interview-Front-end/images/l3-l4-engineer/event-8.png",
+        "date": "1/Sep/2021",
+        "TicketAvailable": "31"
+      }
+    ]
+} 
