@@ -1,10 +1,14 @@
 <template>
   <div class="">
    <div>
+       <div v-if="showmsg" class="alert card" role="alert">
+                 {{message}}
+             </div>
         <div class="inp">
            <span><font-awesome-icon class="fa-search" icon="search" /></span>
            <input v-model="search" @input='here' placeholder="Search ">
         </div>
+
     </div>
     <div class="sect">
       <h1 class='heading'>Events : </h1>
@@ -46,6 +50,8 @@ export default {
   data() {
     return {
       search:'',  
+      message:"",
+      showmsg:false
     }
   },
   methods: {
@@ -60,10 +66,12 @@ export default {
            this.$store.state.Resource = this.Resource.filter((items)=>{
              return items.name.toLowerCase().match(this.search)
            })
-           if(!this.$store.state.Resource){
-             alert("no data found")
+           if(this.Resource==''){
+             this.showmsg=true,
+             this.message ="no data found" 
            }
           }else{
+            this.showmsg=false
              this.$store.state.Resource = json.users
           }
        },
@@ -152,6 +160,11 @@ float:right;
   top: 20px;
   left: 68%;
   font-size: 15px;
+}
+.alert{
+  color: darkred;
+  text-align: center;
+  font-size: 20px;
 }
 @media screen and (max-width: 950px) {
   .column {
