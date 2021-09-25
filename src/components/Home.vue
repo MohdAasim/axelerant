@@ -56,11 +56,13 @@ export default {
       this.$router.push('/bookevent')
     },
     here(){
-          console.log(this.search);
           if(this.search!=""){
            this.$store.state.Resource = this.Resource.filter((items)=>{
              return items.name.toLowerCase().match(this.search)
            })
+           if(!this.$store.state.Resource){
+             alert("no data found")
+           }
           }else{
              this.$store.state.Resource = json.users
           }
